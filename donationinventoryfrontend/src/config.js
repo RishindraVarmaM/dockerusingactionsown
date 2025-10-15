@@ -1,4 +1,4 @@
 const config = {
-  url: "http://springboots:7070/api/donations" 
+  url: "http://localhost:2026/api/donations" 
 }
 export default config;
