@@ -1,7 +1,7 @@
 services:
   mysqldb:
     image: mysql:8
-    container_name: mysql-db
+    container_name: mysql-dbs
     environment:
       MYSQL_ROOT_PASSWORD: docker
       MYSQL_DATABASE: donationdb
@@ -15,9 +15,9 @@ services:
   backend:
     platform: linux/amd64
     image: rishindravarmam/docker-backend:latest
-    container_name: springboot
+    container_name: springboots
     ports:
-      - "2025:2000"
+      - "2026:2001"
     depends_on:
       - mysqldb
     restart: on-failure
@@ -27,9 +27,9 @@ services:
   frontend:
     platform: linux/amd64
     image: rishindravarmam/docker-frontend:latest
-    container_name: react
+    container_name: reacts
     ports:
-      - "3000:80"
+      - "3001:70"
     depends_on:
       - backend
     restart: on-failure
