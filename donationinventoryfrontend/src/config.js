@@ -1,4 +1,5 @@
 const config = {
-  url: "http://localhost:2026/api/donations" 
+  url: "http://host.docker.internal:2026/api/donations"
 }
+
 export default config;
