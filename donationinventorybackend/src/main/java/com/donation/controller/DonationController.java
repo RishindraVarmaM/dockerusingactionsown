@@ -8,7 +8,7 @@ import com.donation.service.DonationService;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:5173") // allow frontend (Vite default port)
+@CrossOrigin(origins = "*") // allow frontend (Vite default port)
 @RestController
 @RequestMapping("/api/donations")
 public class DonationController {
